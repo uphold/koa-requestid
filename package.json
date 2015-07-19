@@ -1,0 +1,57 @@
+{
+  "name": "koa-requestid",
+  "version": "0.0.0",
+  "description": "A middleware that adds a request id to a koa application",
+  "author": {
+    "email": "rui.marinho@seegno.com",
+    "name": "Rui Marinho",
+    "url": "http://seegno.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/seegno/koa-requestid/",
+  "bugs": "https://github.com/seegno/koa-requestid/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seegno/koa-requestid.git"
+  },
+  "main": "./dist/index.js",
+  "keywords": [
+    "koa",
+    "request",
+    "requestId",
+    "request-id"
+  ],
+  "options": {
+    "mocha": "--compilers js:babel/register --require should test"
+  },
+  "scripts": {
+    "build": "rm -rf dist/* && ./node_modules/.bin/babel src/ --loose --plugins object-assign --optional asyncToGenerator --out-dir dist/",
+    "changelog": "github_changelog_generator --no-issues",
+    "cover": "./node_modules/.bin/babel-node node_modules/.bin/isparta cover --report html node_modules/.bin/_mocha -- $npm_package_options_mocha",
+    "coveralls": "./node_modules/.bin/babel-node node_modules/.bin/isparta cover --report html node_modules/.bin/_mocha --report lcovonly -- $npm_package_options_mocha && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint": "eslint src test",
+    "prepublish": "npm test && npm run build",
+    "test": "./node_modules/.bin/mocha --harmony $npm_package_options_mocha"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.3"
+  },
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "babel-core": "^5.7.4",
+    "babel-eslint": "^3.1.23",
+    "babel-plugin-object-assign": "^1.2.0",
+    "coveralls": "^2.11.2",
+    "eslint": "^0.24.1",
+    "eslint-plugin-babel": "^1.1.0",
+    "isparta": "^3.0.3",
+    "koa": "^0.21.0",
+    "mocha": "^2.0.1",
+    "should": "^7.0.1",
+    "supertest": "^1.0.1"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.12"
+  }
+}
