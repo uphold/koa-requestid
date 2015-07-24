@@ -1,6 +1,6 @@
 {
   "name": "koa-requestid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A middleware that adds a request id to a koa application",
   "author": {
     "email": "rui.marinho@seegno.com",
