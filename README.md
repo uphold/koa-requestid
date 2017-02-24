@@ -15,19 +15,18 @@ $ npm install koa-requestid --save
 
 ## Usage
 
-Use `koa-requestid` as a middleware for a `koa` app. By default, it generates a unique uuid (v4) and exposes it on the response via the `Request-Id` header. The id is also saved as part of the request *state*, which is usually acessible in the `context.state` object on recent versions of `koa`.
-On older versions, it is directly set on `context.id`.
+Use `koa-requestid` as a middleware for a `koa` app. By default, it generates a unique uuid (v4) and exposes it on the response via the `Request-Id` header. The id is also saved as part of the request *state*.
 
 In the following example, the generated uuid is manually exposed on the body for debugging purposes:
 
 ```js
-var koa = require('koa');
-var requestId = require('koa-requestid');
-var app = koa();
+const Koa = require('koa');
+const requestId = require('koa-requestid');
+const app = new Koa();
 
 app.use(requestId());
-app.use(function *() {
-  this.body = this.state.id;
+app.use(async ctx => {
+  ctx.body = ctx.state.id;
 });
 
 app.listen(3000);
@@ -81,9 +80,9 @@ foobar
 Example:
 
 ```js
-var koa = require('koa');
-var requestId = require('koa-requestid');
-var app = koa();
+const Koa = require('koa');
+const requestId = require('koa-requestid');
+const app = new Koa();
 
 app.use(requestId({
   expose: 'X-Request-Id',
