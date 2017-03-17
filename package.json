@@ -2,24 +2,36 @@
   "name": "koa-requestid",
   "version": "1.0.0",
   "description": "A middleware that adds a request id to a koa application",
-  "author": {
-    "email": "rui.marinho@seegno.com",
-    "name": "Rui Marinho",
-    "url": "http://seegno.com"
-  },
-  "license": "MIT",
+  "keywords": [
+    "koa",
+    "request",
+    "request-id",
+    "requestId"
+  ],
   "homepage": "https://github.com/seegno/koa-requestid/",
   "bugs": "https://github.com/seegno/koa-requestid/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Rui Marinho",
+    "email": "ruipmarinho@gmail.com",
+    "url": "https://github.com/ruimarinho"
+  },
+  "contributors": [
+    {
+      "name": "Miguel Martins",
+      "email": "me@kurayama.net",
+      "url": "https://github.com/kurayama"
+    },
+    {
+      "name": "Nuno Sousa",
+      "email": "nunofgs@gmail.com",
+      "url": "https://github.com/nunofgs"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/seegno/koa-requestid.git"
   },
-  "keywords": [
-    "koa",
-    "request",
-    "requestId",
-    "request-id"
-  ],
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,3ba' -e 'P;D' CHANGELOG.md",
     "lint": "eslint src test",
