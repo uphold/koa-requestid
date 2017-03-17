@@ -21,7 +21,7 @@ or via `npm`:
 
 ## Usage
 
-Use `koa-requestid` as a middleware for a `koa` app. By default, it generates a unique uuid (v4) and exposes it on the response via the `Request-Id` header. The id is also saved as part of the request *state*.
+Use `koa-requestid` as a middleware for a [koa](https://github.com/koajs/koa) app. By default, it generates a unique uuid (v4) and exposes it on the response via the `Request-Id` header. The id is also saved as part of the request *state*.
 
 In the following example, the generated uuid is manually exposed on the body for debugging purposes:
 
