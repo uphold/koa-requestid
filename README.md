@@ -103,7 +103,7 @@ $ npm test
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/koa-requestid.svg
+[npm-image]: https://img.shields.io/npm/v/koa-requestid.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/koa-requestid
-[travis-image]: https://travis-ci.org/seegno/koa-requestid.svg
-[travis-url]: https://travis-ci.org/seegno/koa-requestid
+[travis-image]: https://img.shields.io/travis/seegno/koa-requestid.svg?style=flat-square
+[travis-url]: https://img.shields.io/travis/seegno/koa-requestid
