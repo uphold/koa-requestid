@@ -7,10 +7,16 @@
 
 ## Installation
 
-Install the package via `npm`:
+Install the package via `yarn`:
 
-```bash
-$ npm install koa-requestid --save
+```sh
+❯ yarn add koa-requestid
+```
+
+or via `npm`:
+
+```sh
+❯ npm install koa-requestid --save
 ```
 
 ## Usage
