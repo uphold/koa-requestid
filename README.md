@@ -102,7 +102,7 @@ This configuration would expose every generated request id via the `X-Request-Id
 ## Tests
 
 ```
-$ npm test
+❯ yarn test
 ```
 
 ## Release
