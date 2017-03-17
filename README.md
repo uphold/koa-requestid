@@ -105,6 +105,12 @@ This configuration would expose every generated request id via the `X-Request-Id
 $ npm test
 ```
 
+## Release
+
+```sh
+npm version [<newversion> | major | minor | patch] -m "Release %s"
+```
+
 ## License
 
 MIT
