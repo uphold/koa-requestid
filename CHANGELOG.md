@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.0.1](https://github.com/seegno/koa-requestid/tree/v2.0.1) (2017-03-21)
+[Full Changelog](https://github.com/seegno/koa-requestid/compare/v2.0.0...v2.0.1)
+
+**Merged pull requests:**
+
+- Remove unnecessary quotes from .travis.yml [\#5](https://github.com/seegno/koa-requestid/pull/5) ([ruimarinho](https://github.com/ruimarinho))
+- Ignore unnecessary package content on npm publish [\#4](https://github.com/seegno/koa-requestid/pull/4) ([ruimarinho](https://github.com/ruimarinho))
+
 ## [v2.0.0](https://github.com/seegno/koa-requestid/tree/v2.0.0) (2017-03-17)
 [Full Changelog](https://github.com/seegno/koa-requestid/compare/1.0.0...v2.0.0)
 
