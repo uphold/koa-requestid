@@ -108,7 +108,7 @@ This configuration would expose every generated request id via the `X-Request-Id
 ## Release
 
 ```sh
-npm version [<newversion> | major | minor | patch] -m "Release %s"
+npm version [<new version> | major | minor | patch] -m "Release %s"
 ```
 
 ## License
