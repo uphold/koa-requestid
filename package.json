@@ -2,6 +2,8 @@
   "name": "koa-requestid",
   "version": "2.0.1",
   "description": "A middleware that adds a request id to a koa application",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "keywords": [
     "koa",
     "request",
