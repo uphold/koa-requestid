@@ -93,7 +93,7 @@ const app = new Koa();
 app.use(requestId({
   expose: 'X-Request-Id',
   header: 'X-Req-Id',
-  query: 'request-id'
+  query: 'request-id',
 }));
 ```
 
