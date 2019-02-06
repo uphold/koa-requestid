@@ -1,20 +1,12 @@
 # Changelog
 
-## [v2.0.1](https://github.com/seegno/koa-requestid/tree/v2.0.1) (2017-03-21)
-[Full Changelog](https://github.com/seegno/koa-requestid/compare/v2.0.0...v2.0.1)
+## [v2.0.1](https://github.com/uphold/koa-requestid/releases/tag/v2.0.1) (2017-03-21)
+- Remove unnecessary quotes from .travis.yml [\#5](https://github.com/uphold/koa-requestid/pull/5) ([ruimarinho](https://github.com/ruimarinho))
+- Ignore unnecessary package content on npm publish [\#4](https://github.com/uphold/koa-requestid/pull/4) ([ruimarinho](https://github.com/ruimarinho))
 
-**Merged pull requests:**
+## [v2.0.0](https://github.com/uphold/koa-requestid/releases/tag/v2.0.0) (2017-03-17)
+- Update package.json and documentation [\#3](https://github.com/uphold/koa-requestid/pull/3) ([ruimarinho](https://github.com/ruimarinho))
+- Update yarn.lock [\#2](https://github.com/uphold/koa-requestid/pull/2) ([ruimarinho](https://github.com/ruimarinho))
+- Update koa@2.0.1 [\#1](https://github.com/uphold/koa-requestid/pull/1) ([kurayama](https://github.com/kurayama))
 
-- Remove unnecessary quotes from .travis.yml [\#5](https://github.com/seegno/koa-requestid/pull/5) ([ruimarinho](https://github.com/ruimarinho))
-- Ignore unnecessary package content on npm publish [\#4](https://github.com/seegno/koa-requestid/pull/4) ([ruimarinho](https://github.com/ruimarinho))
-
-## [v2.0.0](https://github.com/seegno/koa-requestid/tree/v2.0.0) (2017-03-17)
-[Full Changelog](https://github.com/seegno/koa-requestid/compare/1.0.0...v2.0.0)
-
-**Merged pull requests:**
-
-- Update package.json and documentation [\#3](https://github.com/seegno/koa-requestid/pull/3) ([ruimarinho](https://github.com/ruimarinho))
-- Update yarn.lock [\#2](https://github.com/seegno/koa-requestid/pull/2) ([ruimarinho](https://github.com/ruimarinho))
-- Update koa@2.0.1 [\#1](https://github.com/seegno/koa-requestid/pull/1) ([kurayama](https://github.com/kurayama))
-
-## [1.0.0](https://github.com/seegno/koa-requestid/tree/1.0.0) (2015-07-24)
+## [v1.0.0](https://github.com/uphold/koa-requestid/releases/tag/v1.0.0) (2015-07-24)
