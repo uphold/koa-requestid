@@ -115,7 +115,7 @@ npm version [<new version> | major | minor | patch] -m "Release %s"
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/koa-requestid.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/koa-requestid.svg
 [npm-url]: https://www.npmjs.com/package/koa-requestid
-[travis-image]: https://img.shields.io/travis/seegno/koa-requestid.svg?style=flat-square
-[travis-url]: https://img.shields.io/travis/seegno/koa-requestid
+[travis-image]: https://travis-ci.org/uphold/koa-requestid.svg?branch=master
+[travis-url]: https://travis-ci.org/uphold/koa-requestid
