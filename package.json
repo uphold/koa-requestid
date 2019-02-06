@@ -35,15 +35,16 @@
     "url": "https://github.com/seegno/koa-requestid.git"
   },
   "scripts": {
-    "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,3ba' -e 'P;D' CHANGELOG.md",
+    "changelog": "github-changelog-generator -f v$npm_package_version  > CHANGELOG.md",
     "lint": "eslint index.js test",
     "test": "jest --coverage --env=node",
-    "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
+    "version": "npm run changelog && git add -A CHANGELOG.md"
   },
   "dependencies": {
     "uuid": "^3.0.1"
   },
   "devDependencies": {
+    "@uphold/github-changelog-generator": "^0.8.0",
     "eslint": "^3.16.1",
     "eslint-config-seegno": "^8.0.1",
     "jest": "^19.0.2",
