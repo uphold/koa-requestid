@@ -10,4 +10,5 @@ declare function requestId(options?: {
   header?: string;
   query?: string;
 }): Middleware;
+
 export = requestId;
