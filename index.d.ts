@@ -6,9 +6,9 @@
 import { Middleware } from 'koa';
 
 declare function requestId(options?: {
-  expose?: string;
-  header?: string;
-  query?: string;
+  expose?: string | false;
+  header?: string | false;
+  query?: string | false;
 }): Middleware;
 
 export = requestId;
