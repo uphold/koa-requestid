@@ -49,9 +49,13 @@
     "eslint-config-uphold": "^0.2.0",
     "jest": "^19.0.2",
     "koa": "^2.0.1",
+    "pre-commit": "^1.2.2",
     "supertest": "^3.0.0"
   },
   "engines": {
     "node": ">=7.6"
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
