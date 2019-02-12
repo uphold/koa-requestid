@@ -79,9 +79,9 @@ foobar
 1. `options` *(object)*: A dictionary of options.
 
 #### Options
-1. `expose` *(boolean|string)*: The name of the header to expose the id on the response, or `false` to disable.
-2. `header` *(boolean|string)*: The name of the header to read the id on the request, or `false` to disable.
-3. `query` *(boolean|string)*: The name of the header to read the id on the query string, or `false` to disable.
+1. `expose` *(string|false)*: The name of the header to expose the id on the response, or `false` to disable.
+2. `header` *(string|false)*: The name of the header to read the id on the request, or `false` to disable.
+3. `query` *(string|false)*: The name of the header to read the id on the query string, or `false` to disable.
 
 Example:
 
