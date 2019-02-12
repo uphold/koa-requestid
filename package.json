@@ -10,8 +10,8 @@
     "request-id",
     "requestId"
   ],
-  "homepage": "https://github.com/seegno/koa-requestid/",
-  "bugs": "https://github.com/seegno/koa-requestid/issues",
+  "homepage": "https://github.com/uphold/koa-requestid/",
+  "bugs": "https://github.com/uphold/koa-requestid/issues",
   "license": "MIT",
   "author": {
     "name": "Rui Marinho",
@@ -32,7 +32,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/seegno/koa-requestid.git"
+    "url": "https://github.com/uphold/koa-requestid.git"
   },
   "scripts": {
     "changelog": "github-changelog-generator -f v$npm_package_version  > CHANGELOG.md",
