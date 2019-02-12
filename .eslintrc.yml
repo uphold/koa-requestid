@@ -1,4 +1,5 @@
-extends: seegno
+extends: uphold
+
 env:
   jasmine: true
   jest: true

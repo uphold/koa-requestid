@@ -35,7 +35,7 @@ describe('koa-requestid', () => {
 
   it('should add a request id to `ctx.state` by default', () => {
     app.use(requestId());
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.state.id;
     });
 
@@ -58,7 +58,7 @@ describe('koa-requestid', () => {
 
   it('should not check the querystring if `query` is false', () => {
     app.use(requestId({ query: false }));
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.state.id;
     });
 
@@ -69,7 +69,7 @@ describe('koa-requestid', () => {
 
   it('should not check the header if `header` is false', () => {
     app.use(requestId({ header: false }));
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.state.id;
     });
 
@@ -81,7 +81,7 @@ describe('koa-requestid', () => {
 
   it('should not expose the header if `header` is false', () => {
     app.use(requestId({ expose: false }));
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.state.id;
     });
 
@@ -93,7 +93,7 @@ describe('koa-requestid', () => {
 
   it('should check the `requestId` querystring by default', () => {
     app.use(requestId());
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.state.id;
     });
 
@@ -104,7 +104,7 @@ describe('koa-requestid', () => {
 
   it('should check the `request-id` header by default', () => {
     app.use(requestId());
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.state.id;
     });
 
@@ -116,7 +116,7 @@ describe('koa-requestid', () => {
 
   it('should expose the `request-id` by default', () => {
     app.use(requestId());
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.response.header['request-id'];
     });
 
@@ -128,7 +128,7 @@ describe('koa-requestid', () => {
 
   it('should expose request id in a custom header if `expose` is set', () => {
     app.use(requestId({ expose: 'x-request-id' }));
-    app.use(async ctx => {
+    app.use(ctx => {
       ctx.body = ctx.response.header['x-request-id'];
     });
 
