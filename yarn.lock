@@ -371,10 +371,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@uphold/github-changelog-generator@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-1.0.0.tgz#839564f1f5a7372c065abd6600a0312f6a9c0031"
-  integrity sha512-yDOXBDpoVdGLXND+jiKYvkWXDtwxy1aO8BNdVPxbTaTXbikwdMfkft3UtyPwjXklesIQQ3Gq0vPMKmvjqc/5bQ==
+"@uphold/github-changelog-generator@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@uphold/github-changelog-generator/-/github-changelog-generator-1.0.1.tgz#d63aa383e4e3124b1f80d84f9d7ee55585a65cfd"
+  integrity sha512-Qe7lO4HQxsy7HQKSi7cn/jQBe5CAT/TtVAQz2yiC8F4qgS6L78e433yTC0uai9EzOnLvt6tbLEhuMC8Jf32lOQ==
   dependencies:
     "@octokit/rest" "^15.15.1"
     bluebird "^3.5.3"
