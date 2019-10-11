@@ -1,5 +1,14 @@
 # Changelog
 
+## [v2.1.0](https://github.com/uphold/koa-requestid/releases/tag/v2.1.0) (2019-10-11)
+- Update @uphold/github-changelog-generator to v1.0.1 [\#21](https://github.com/uphold/koa-requestid/pull/21) ([eduardoconceicao](https://github.com/eduardoconceicao))
+- Update @uphold/github-changelog-generator to v1.0.0 [\#20](https://github.com/uphold/koa-requestid/pull/20) ([eduardoconceicao](https://github.com/eduardoconceicao))
+- Update dev dependencies [\#19](https://github.com/uphold/koa-requestid/pull/19) ([eduardoconceicao](https://github.com/eduardoconceicao))
+- Update eslint to v6.5.1 [\#18](https://github.com/uphold/koa-requestid/pull/18) ([eduardoconceicao](https://github.com/eduardoconceicao))
+- Update jest to 24.9.0 [\#17](https://github.com/uphold/koa-requestid/pull/17) ([eduardoconceicao](https://github.com/eduardoconceicao))
+- Update package standards [\#15](https://github.com/uphold/koa-requestid/pull/15) ([Americas](https://github.com/Americas))
+- Update definitions to allow booleans in the options [\#14](https://github.com/uphold/koa-requestid/pull/14) ([Americas](https://github.com/Americas))
+
 ## [v2.0.2](https://github.com/uphold/koa-requestid/releases/tag/v2.0.2) (2019-02-08)
 - Update travis shield [\#13](https://github.com/uphold/koa-requestid/pull/13) ([Americas](https://github.com/Americas))
 - Add changelog generator [\#12](https://github.com/uphold/koa-requestid/pull/12) ([Americas](https://github.com/Americas))
