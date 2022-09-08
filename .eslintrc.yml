@@ -4,3 +4,7 @@ env:
   jasmine: true
   jest: true
   mocha: false
+
+rules:
+  # Disable prettier.
+  prettier/prettier: 0
