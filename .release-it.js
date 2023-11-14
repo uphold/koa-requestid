@@ -12,11 +12,8 @@ module.exports = {
   },
   hooks: {
     'after:bump': `
-      npm run build &&
       echo "$(npx @uphold/github-changelog-generator -f \${version} -t v\${version})\n$(tail -n +2 CHANGELOG.md)" > CHANGELOG.md &&
-      grep -v "dist" .gitignore > .gitignore.tmp && mv .gitignore.tmp .gitignore &&
-      git add dist CHANGELOG.md --all &&
-      git checkout .gitignore
+      git add CHANGELOG.md --all
     `
   },
   npm: {
