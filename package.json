@@ -35,11 +35,9 @@
     "url": "https://github.com/uphold/koa-requestid.git"
   },
   "scripts": {
-    "changelog": "echo \"$(github-changelog-generator --future-release=v$npm_package_version)\n$(tail -n +2 CHANGELOG.md)\" > CHANGELOG.md",
-    "lint": "eslint index.js test",
+    "lint": "eslint .",
     "release": "release-it",
-    "test": "jest --coverage --env=node",
-    "version": "npm run changelog && git add -A CHANGELOG.md"
+    "test": "jest --coverage --env=node"
   },
   "dependencies": {
     "uuid": "^9.0.0"
