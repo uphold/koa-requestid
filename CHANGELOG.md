@@ -1,26 +1,7 @@
 # Changelog
 
-## [2.2.1](https://github.com/uphold/koa-requestid/releases/tag/v2.2.1) (2023-11-21)
-- Enable npm publish [\#56](https://github.com/uphold/koa-requestid/pull/56) ([Americas](https://github.com/Americas))
-
 ## [v2.2.1](https://github.com/uphold/koa-requestid/releases/tag/v2.2.1) (2023-11-21)
 - Enable npm publish [\#56](https://github.com/uphold/koa-requestid/pull/56) ([Americas](https://github.com/Americas))
-
-## [2.2.0](https://github.com/uphold/koa-requestid/releases/tag/v2.2.0) (2023-11-14)
-- Fix release-it config [\#55](https://github.com/uphold/koa-requestid/pull/55) ([Americas](https://github.com/Americas))
-- Fix release workflow [\#54](https://github.com/uphold/koa-requestid/pull/54) ([Americas](https://github.com/Americas))
-- Fix release workflow [\#53](https://github.com/uphold/koa-requestid/pull/53) ([Americas](https://github.com/Americas))
-- Add release workflow [\#52](https://github.com/uphold/koa-requestid/pull/52) ([Americas](https://github.com/Americas))
-- Bump dependencies [\#44](https://github.com/uphold/koa-requestid/pull/44) ([Americas](https://github.com/Americas))
-- Bump node-fetch from 2.3.0 to 2.6.1 [\#29](https://github.com/uphold/koa-requestid/pull/29) ([dependabot](https://github.com/apps/dependabot))
-- Bump yargs-parser from 13.1.1 to 13.1.2 [\#28](https://github.com/uphold/koa-requestid/pull/28) ([dependabot](https://github.com/apps/dependabot))
-- Bump handlebars from 4.4.3 to 4.7.7 [\#31](https://github.com/uphold/koa-requestid/pull/31) ([dependabot](https://github.com/apps/dependabot))
-- Bump lodash from 4.17.15 to 4.17.19 [\#26](https://github.com/uphold/koa-requestid/pull/26) ([dependabot](https://github.com/apps/dependabot))
-- Bump ini from 1.3.5 to 1.3.7 [\#30](https://github.com/uphold/koa-requestid/pull/30) ([dependabot](https://github.com/apps/dependabot))
-- Bump https-proxy-agent from 2.2.1 to 2.2.4 [\#25](https://github.com/uphold/koa-requestid/pull/25) ([dependabot](https://github.com/apps/dependabot))
-- Remove Node 11 from Travis config, and add Node 13 [\#23](https://github.com/uphold/koa-requestid/pull/23) ([waldyrious](https://github.com/waldyrious))
-- Bump acorn from 5.7.3 to 5.7.4 [\#24](https://github.com/uphold/koa-requestid/pull/24) ([dependabot](https://github.com/apps/dependabot))
-- add node 12 to test versions [\#22](https://github.com/uphold/koa-requestid/pull/22) ([jamemackson](https://github.com/jamemackson))
 
 ## [v2.2.0](https://github.com/uphold/koa-requestid/releases/tag/v2.2.0) (2023-11-14)
 - Fix release-it config [\#55](https://github.com/uphold/koa-requestid/pull/55) ([Americas](https://github.com/Americas))
