@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.1](https://github.com/uphold/koa-requestid/releases/tag/v2.2.1) (2023-11-21)
+- Enable npm publish [\#56](https://github.com/uphold/koa-requestid/pull/56) ([Americas](https://github.com/Americas))
+
+## [v2.2.1](https://github.com/uphold/koa-requestid/releases/tag/v2.2.1) (2023-11-21)
+- Enable npm publish [\#56](https://github.com/uphold/koa-requestid/pull/56) ([Americas](https://github.com/Americas))
+
 ## [2.2.0](https://github.com/uphold/koa-requestid/releases/tag/v2.2.0) (2023-11-14)
 - Fix release-it config [\#55](https://github.com/uphold/koa-requestid/pull/55) ([Americas](https://github.com/Americas))
 - Fix release workflow [\#54](https://github.com/uphold/koa-requestid/pull/54) ([Americas](https://github.com/Americas))
