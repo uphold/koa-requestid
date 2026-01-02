@@ -3,7 +3,7 @@
 ## Status
 
 [![npm version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![CI][ci-image]][ci-url]
 
 ## Installation
 
@@ -117,5 +117,5 @@ MIT
 
 [npm-image]: https://img.shields.io/npm/v/koa-requestid.svg
 [npm-url]: https://www.npmjs.com/package/koa-requestid
-[travis-image]: https://travis-ci.org/uphold/koa-requestid.svg?branch=master
-[travis-url]: https://travis-ci.org/uphold/koa-requestid
+[ci-image]: https://github.com/uphold/koa-requestid/actions/workflows/ci.yaml/badge.svg
+[ci-url]: https://github.com/uphold/koa-requestid/actions/workflows/ci.yaml
