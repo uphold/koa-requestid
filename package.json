@@ -53,7 +53,18 @@
     "supertest": "^6.2.4"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=20"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=20"
+    },
+    "packageManager": {
+      "name": "yarn",
+      "version": "^1.22.22",
+      "onFail": "warn"
+    }
   },
   "pre-commit": [
     "lint"
