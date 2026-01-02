@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["ES2022"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "paths": {
+      "test/*": ["./test/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": false
+  },
+  "typeAcquisition": {
+    "enable": true
+  }
+}
