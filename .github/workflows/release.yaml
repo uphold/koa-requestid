@@ -16,17 +16,19 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    concurrency: 1
+    concurrency:
+      group: release-${{ github.repository }}-${{ github.ref_name }}
+      cancel-in-progress: false
     environment: release
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         token: ${{ secrets.RELEASE_GITHUB_TOKEN }}
 
     - name: Setup Node.js version
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v6
       with:
         node-version: 20
 
