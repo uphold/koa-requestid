@@ -1,6 +1,7 @@
 *
 !.github
 !.github/**
+!eslint.config.mjs
 !index.js
 !index.d.ts
 !.release-it.js

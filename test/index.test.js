@@ -39,9 +39,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.state.id;
     });
 
-    return request(server)
-      .get('/')
-      .expect(uuid);
+    return request(server).get('/').expect(uuid);
   });
 
   for (const option of ['expose', 'header', 'query']) {
@@ -62,9 +60,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.state.id;
     });
 
-    return request(server)
-      .get('/?requestId=foobar')
-      .expect(uuid);
+    return request(server).get('/?requestId=foobar').expect(uuid);
   });
 
   it('should not check the header if `header` is false', () => {
@@ -73,10 +69,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.state.id;
     });
 
-    return request(server)
-      .get('/')
-      .set('request-id', 'foobar')
-      .expect(uuid);
+    return request(server).get('/').set('request-id', 'foobar').expect(uuid);
   });
 
   it('should not expose the header if `header` is false', () => {
@@ -85,10 +78,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.state.id;
     });
 
-    return request(server)
-      .get('/')
-      .set('request-id', 'foobar')
-      .expect({});
+    return request(server).get('/').set('request-id', 'foobar').expect({});
   });
 
   it('should check the `requestId` querystring by default', () => {
@@ -97,9 +87,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.state.id;
     });
 
-    return request(server)
-      .get('/?requestId=foobar')
-      .expect('foobar');
+    return request(server).get('/?requestId=foobar').expect('foobar');
   });
 
   it('should check the `request-id` header by default', () => {
@@ -108,10 +96,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.state.id;
     });
 
-    return request(server)
-      .get('/')
-      .set('request-id', 'foobar')
-      .expect('foobar');
+    return request(server).get('/').set('request-id', 'foobar').expect('foobar');
   });
 
   it('should expose the `request-id` by default', () => {
@@ -120,10 +105,7 @@ describe('koa-requestid', () => {
       ctx.body = ctx.response.header['request-id'];
     });
 
-    return request(server)
-      .get('/')
-      .set('request-id', 'foobar')
-      .expect('foobar');
+    return request(server).get('/').set('request-id', 'foobar').expect('foobar');
   });
 
   it('should expose request id in a custom header if `expose` is set', () => {
@@ -132,9 +114,6 @@ describe('koa-requestid', () => {
       ctx.body = ctx.response.header['x-request-id'];
     });
 
-    return request(server)
-      .get('/')
-      .set('request-id', 'foobar')
-      .expect('foobar');
+    return request(server).get('/').set('request-id', 'foobar').expect('foobar');
   });
 });
