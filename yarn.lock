@@ -4512,10 +4512,6 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
 
-uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.0.tgz"
-
 v8-to-istanbul@^9.0.1:
   version "9.0.1"
   resolved "https://registry.npmjs.org/v8-to-istanbul/-/v8-to-istanbul-9.0.1.tgz"

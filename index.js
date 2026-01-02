@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const { v4: uuid } = require('uuid');
+const { randomUUID: uuid } = require('node:crypto');
 
 /**
  * Request id middleware.
