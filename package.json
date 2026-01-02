@@ -40,9 +40,7 @@
     "release": "release-it",
     "test": "jest --coverage --env=node"
   },
-  "dependencies": {
-    "uuid": "^9.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@uphold/github-changelog-generator": "^3.2.0",
     "eslint": "~9.39.2",
