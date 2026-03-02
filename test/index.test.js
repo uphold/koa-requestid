@@ -4,15 +4,16 @@
  * Module dependencies.
  */
 
+const { afterEach, beforeEach, describe, it } = require('node:test');
 const Koa = require('koa');
 const request = require('supertest');
-const requestId = require('..');
+const requestId = require('../index.js');
 
 /**
  * Uuid regex.
  */
 
-const uuid = /^[a-f0-9]{8}-[a-f0-9]{4}/;
+const uuid = new RegExp(/^[a-f0-9]{8}-[a-f0-9]{4}/);
 
 /**
  * Test `koa-requestid`.
@@ -29,8 +30,8 @@ describe('koa-requestid', () => {
 
   afterEach(() => server.close());
 
-  it('should expose a named function', () => {
-    expect(requestId().name).toEqual('requestId');
+  it('should expose a named function', context => {
+    context.assert.strictEqual(requestId().name, 'requestId');
   });
 
   it('should add a request id to `ctx.state` by default', () => {
@@ -43,14 +44,10 @@ describe('koa-requestid', () => {
   });
 
   for (const option of ['expose', 'header', 'query']) {
-    it(`should throw an error if \`${option}\` option is invalid`, () => {
-      try {
-        requestId({ [option]: 123 });
-
-        fail();
-      } catch (e) {
-        expect(e.message).toEqual(`Option \`${option}\` requires a boolean or a string`);
-      }
+    it(`should throw an error if \`${option}\` option is invalid`, context => {
+      context.assert.throws(() => requestId({ [option]: 123 }), {
+        message: `Option \`${option}\` requires a boolean or a string`
+      });
     });
   }
 
