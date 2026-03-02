@@ -1,8 +1,9 @@
 *
 !.github
 !.github/**
-!eslint.config.mjs
-!index.js
-!index.d.ts
-!jsconfig.json
 !.release-it.js
+!eslint.config.mjs
+!index.d.ts
+!index.js
+!jsconfig.json
+!yarn.lock
