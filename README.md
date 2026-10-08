@@ -49,7 +49,7 @@ Execute a request to the running app:
 cc0f12c7-f3b6-4c86-94c2-8c4ce7751651
 ```
 
-Sometimes it is also useful to pass a custom id via a request header or query string, specifically in debugging sessions. Please note that the input id is not sanitized, so the usual precautions apply.
+Sometimes it is also useful to pass a custom id via a request header or query string, specifically in debugging sessions. Please note that the input id is validated before use: it must be a string of 1 to 255 characters, made up of printable Latin-1 characters only. Anything else (control characters, code points above U+00FF, repeated query parameters, oversized values) is ignored and a new uuid is generated instead, so client-supplied ids can never crash the response or inject extra headers or log lines.
 
 Using the above snippet to send a custom via the default `Request-Id` header:
 
@@ -81,7 +81,9 @@ foobar
 #### Options
 1. `expose` *(string|false)*: The name of the header to expose the id on the response, or `false` to disable.
 2. `header` *(string|false)*: The name of the header to read the id on the request, or `false` to disable.
-3. `query` *(string|false)*: The name of the header to read the id on the query string, or `false` to disable.
+3. `query` *(string|false)*: The name of the query string parameter to read the id from, or `false` to disable.
+
+> `expose` and `header` must be `false` or a valid HTTP header field name (RFC 7230 `token`); any other value, including `true`, is rejected when the middleware is created so that a misconfiguration cannot become a response header literally named `true`.
 
 Example:
 
